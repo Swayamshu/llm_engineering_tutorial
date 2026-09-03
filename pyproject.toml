@@ -5,14 +5,11 @@ description = "This project is built to learn LLM Engineering. This repo provide
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "gradio>=6.26.0",
     "httpx>=0.28.1",
     "openai>=3.3.1",
     "python-dotenv>=1.2.3",
 ]
 
-[project.scripts]
-tutorials = "tutorials:main"
-
-[build-system]
-requires = ["uv_build>=0.12.5,<0.13.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
